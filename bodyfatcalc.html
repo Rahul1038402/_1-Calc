@@ -177,6 +177,13 @@
       </footer>
 
     <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
         document.getElementById('calculateButton').addEventListener('click', () => {
           const sex = document.getElementById('sex').value;
           const lifeStage = document.getElementById('lifeStage').value;

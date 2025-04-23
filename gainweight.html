@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="md:hidden hidden">
+        <div id="mobile-menu" class="hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="homepage.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-600">Home</a>
                 <a href="mathscalc.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-600">Maths</a>
@@ -191,6 +191,13 @@
       </footer>
 
     <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
         document.getElementById('calculateButton').addEventListener('click', () => {
           const sex = document.getElementById('sex').value;
           const age = parseFloat(document.getElementById('age').value);

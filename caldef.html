@@ -191,6 +191,13 @@
       </footer>
 
     <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
         document.getElementById('calculateButton').addEventListener('click', () => {
           const sex = document.getElementById('sex').value;
           const age = parseFloat(document.getElementById('age').value);
