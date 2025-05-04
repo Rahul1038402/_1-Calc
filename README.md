@@ -57,3 +57,5 @@
 - **JavaScript** for core logic and DOM handling
 
 ---
+
+## Feel free to reach out for any contributions
