@@ -70,16 +70,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-3">
-                    <img src="/logo.png" alt="1 Calc Logo" class="h-36 w-auto">
+                    <a href="homepage.html" class=" text-3xl text-purple-700">1 Calc</a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="mathscalc.html"
-                            class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600">Maths</a>
+                            class="px-3 py-2 rounded-md hover:bg-gray-600">Maths</a>
                         <a href="healthcalc.html"
-                            class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600">Health</a>
+                            class="px-3 py-2 rounded-md hover:bg-gray-600">Health</a>
                         <a href="internetconnect.html"
-                            class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600">Internet And
+                            class="px-3 py-2 rounded-md hover:bg-gray-600">Internet And
                             Connectivity</a>
                     </div>
                 </div>
@@ -98,33 +98,42 @@
         <div id="mobile-menu" class="md:hidden hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="mathscalc.html"
-                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-600">Maths</a>
+                    class="block px-3 py-2 rounded-md hover:bg-gray-600">Maths</a>
                 <a href="healthcalc.html"
-                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-600">Health</a>
+                    class="block px-3 py-2 rounded-md hover:bg-gray-600">Health</a>
                 <a href="internetconnect.html"
-                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-600">Internet And
+                    class="block px-3 py-2 rounded-md hover:bg-gray-600">Internet And
                     Connectivity</a>
             </div>
         </div>
     </nav>
 
-    <div class="flex justify-center h-screen w-screen mx-auto container">
-        <div class="flex items-center text-center">
-            <div class="py-4 px-4">
-                <h2 class="text-3xl font-semibold text-gray-200 md:text-4xl">Welcome to 1 Calc</h2>
-                <h2 class="text-3xl font-semibold text-purple-400 md:text-4xl">Your Ultimate Online
-                    Calculator Hub</h2>
-                <p class="mt-2 py-4 text-sm text-gray-300 md:text-base">1 Calc: Your all-in-one
-                    destination for financial, mathematical, health, and everyday calculators.</p>
-            </div>
-        </div>
+<div class="flex justify-center h-screen w-screen mx-auto container">
+  <div class="flex items-center text-center">
+    <div class="py-4 px-4">
+      <h2 class="text-3xl text-gray-200 md:text-4xl">Welcome to 1 Calc</h2>
+      <h2 class="text-3xl text-purple-400 md:text-4xl">Your Ultimate Online Calculator Hub</h2>
+      <p class="mt-2 py-4 text-sm text-gray-300 md:text-base">
+        1 Calc: Your all-in-one destination for financial, mathematical, health, and everyday calculators.
+      </p>
     </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+    <span class="text-sm text-gray-400 mb-2">Scroll</span>
+    <svg class="h-5 w-5 text-purple-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </div>
+</div>
+
 
     <hr class="my-4 border-t border-gray-300" />
 
     <section class="bg text-center py-16">
         <div class="max-w-3xl mx-auto px-4">
-            <h1 class="text-4xl sm:text-5xl font-bold text-gray-300 mb-4">
+            <h1 class="text-4xl sm:text-5xl text-purple-700 mb-4">
                 1 Calc
             </h1>
             <p class="text-lg sm:text-xl text-gray-400">
@@ -176,7 +185,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <p class="font-medium">Math</p>
+                        <p>Math</p>
                         <p id="count1" class="text-gray-400"></p>
                     </a>
                 </button>
@@ -232,7 +241,7 @@
                             </svg>
                         </div>
 
-                        <p class="font-medium">Health</p>
+                        <p>Health</p>
                         <p id="count2" class="text-gray-400"></p>
                     </a>
                 </button>
@@ -261,7 +270,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <p class="font-medium">Internet</p>
+                        <p>Internet</p>
                         <p id="count3" class="text-gray-400"></p>
                     </a>
                 </button>
@@ -273,7 +282,7 @@
     <footer class="footer-bg w-full px-4 py-6 flex flex-col items-center md:flex-row md:justify-between md:items-center">
         <!-- Left Section -->
         <div class="flex flex-col items-center md:flex-row md:items-center space-y-1 md:space-y-0 md:space-x-2">
-          <p class="icon font-bold text-xl text-purple-700">1 Calc</p>
+          <p class="text-xl text-purple-700">1 Calc</p>
           <p class="text-lg text-gray-200">| 2025 Copyright</p>
         </div>
       
